@@ -86,15 +86,9 @@ ul, ol, li > p {
 ul > li     { color: #aaa; }
 ul > li > * { color: black; }
 
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
+pre {
   padding: 0;
   margin: 0;
-}
-pre {
-  white-space: pre-wrap;
 }
 
 #author {
@@ -184,7 +178,7 @@ div.quoteblock, div.verseblock {
   margin-left: 1.0em;
   margin-right: 10%;
   border-left: 5px solid #f0f0f0;
-  color: #888;
+  color: #777777;
 }
 
 div.quoteblock > div.attribution {
@@ -224,7 +218,7 @@ div.exampleblock > div.content {
 }
 
 div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
+span.image img { border-style: none; }
 a.image:visited { color: white; }
 
 dl {
@@ -354,7 +348,7 @@ div.colist td img {
   margin-bottom: 0.1em;
 }
 
-div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -412,13 +406,17 @@ span.underline { text-decoration: underline; }
 span.overline { text-decoration: overline; }
 span.line-through { text-decoration: line-through; }
 
-div.unbreakable { page-break-inside: avoid; }
-
 
 /*
  * xhtml11 specific
  *
  * */
+
+tt {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 div.tableblock {
   margin-top: 1.0em;
@@ -452,6 +450,12 @@ div.tableblock > table[frame="vsides"] {
  * html5 specific
  *
  * */
+
+.monospaced {
+  font-family: monospace;
+  font-size: inherit;
+  color: navy;
+}
 
 table.tableblock {
   margin-top: 1.0em;
@@ -532,6 +536,72 @@ body.manpage div.sectionbody {
 @media print {
   body.manpage div#toc { display: none; }
 }
+
+
+/*
+ * Theme specific overrides of the preceding (asciidoc.css) CSS.
+ *
+ */
+body {
+  font-family: Garamond, Georgia, serif;
+  font-size: 17px;
+  color: #3E4349;
+  line-height: 1.3em;
+}
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Garmond, Georgia, serif;
+  font-weight: normal;
+  border-bottom-width: 0;
+  color: #3E4349;
+}
+div.title, caption.title { color: #596673; font-weight: bold; }
+h1 { font-size: 240%; }
+h2 { font-size: 180%; }
+h3 { font-size: 150%; }
+h4 { font-size: 130%; }
+h5 { font-size: 115%; }
+h6 { font-size: 100%; }
+#header h1 { margin-top: 0; }
+#toc {
+  color: #444444;
+  line-height: 1.5;
+  padding-top: 1.5em;
+}
+#toctitle {
+  font-size: 20px;
+}
+#toc a {
+    border-bottom: 1px dotted #999999;
+    color: #444444 !important;
+    text-decoration: none !important;
+}
+#toc a:hover {
+    border-bottom: 1px solid #6D4100;
+    color: #6D4100 !important;
+    text-decoration: none !important;
+}
+div.toclevel1 { margin-top: 0.2em; font-size: 16px; }
+div.toclevel2 { margin-top: 0.15em; font-size: 14px; }
+em, dt, td.hdlist1 { color: black; }
+strong { color: #3E4349; }
+a { color: #004B6B; text-decoration: none; border-bottom: 1px dotted #004B6B; }
+a:visited { color: #615FA0; border-bottom: 1px dotted #615FA0; }
+a:hover { color: #6D4100; border-bottom: 1px solid #6D4100; }
+div.tableblock > table, table.tableblock { border: 3px solid #E8E8E8; }
+th.tableblock, td.tableblock { border: 1px solid #E8E8E8; }
+ul > li > * { color: #3E4349; }
+pre, tt, .monospaced { font-family: Consolas,Menlo,'Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace; }
+tt, .monospaced { font-size: 0.9em; color: black;
+}
+div.exampleblock > div.content, div.sidebarblock > div.content, div.listingblock > div.content { border-width: 0 0 0 3px; border-color: #E8E8E8; }
+div.verseblock { border-left-width: 0; margin-left: 3em; }
+div.quoteblock { border-left-width: 3px; margin-left: 0; margin-right: 0;}
+div.admonitionblock td.content { border-left: 3px solid #E8E8E8; }
 
 
 @media screen {
@@ -779,7 +849,8 @@ asciidoc.install(2);
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph"><p>这本书是介绍南宁的旅游景点的。</p></div>
+<div class="paragraph"><p>这本书介绍了南宁的一些旅游资源。
+经过作者的细心筛选，并非所有的区/市级文物保护单位都会被收录。</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -814,8 +885,8 @@ width:100%;
 <tbody>
 </tbody>
 </table>
-<div class="paragraph"><p>据说是经营了40多年的凉茶店。也卖甜品。
-推荐中杯罗汉果凉茶（3元）。</p></div>
+<div class="paragraph"><p>据说是经营了40多年的凉茶店，也卖甜品。
+推荐中杯罗汉果凉茶（3元）、中杯生地茶（3元）、槐花粉（5元）。</p></div>
 <div class="imageblock" style="text-align:right;">
 <div class="content">
 <a class="image" href="images/luohanguoliangcha.jpg">
@@ -885,7 +956,7 @@ width:100%;
 <tbody>
 </tbody>
 </table>
-<div class="paragraph"><p>推荐八珍粉（15元）。</p></div>
+<div class="paragraph"><p>八珍粉（15元）特别有名。</p></div>
 </div>
 <div class="sect2">
 <h3 id="_霞姐老牌瓦煲饭">霞姐老牌瓦煲饭</h3>
@@ -899,7 +970,7 @@ width:100%;
 <col style="width:25%;">
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top" >营业时间 </th>
+<th class="tableblock halign-left valign-top" >营业时间   </th>
 <th class="tableblock halign-left valign-top" >地址       </th>
 <th class="tableblock halign-left valign-top" >公交                                          </th>
 <th class="tableblock halign-left valign-top" >地铁</th>
@@ -907,7 +978,7 @@ width:100%;
 </thead>
 <tfoot>
 <tr>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">10:30-21:00</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">民族路61号</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">71、80、89、212、802路 市一医院站</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
@@ -916,6 +987,7 @@ width:100%;
 <tbody>
 </tbody>
 </table>
+<div class="paragraph"><p>各种瓦煲饭。</p></div>
 </div>
 <div class="sect2">
 <h3 id="_铜螺湾">铜螺湾</h3>
@@ -963,7 +1035,7 @@ width:100%;
 <tr>
 <th class="tableblock halign-left valign-top" >营业时间  </th>
 <th class="tableblock halign-left valign-top" >地址         </th>
-<th class="tableblock halign-left valign-top" >公交                                          </th>
+<th class="tableblock halign-left valign-top" >公交                            </th>
 <th class="tableblock halign-left valign-top" >地铁</th>
 </tr>
 </thead>
@@ -979,6 +1051,69 @@ width:100%;
 </tbody>
 </table>
 <div class="paragraph"><p>推荐招牌粉饺1元/碟。</p></div>
+</div>
+<div class="sect2">
+<h3 id="_苏记传统马蹄糕">苏记传统马蹄糕</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >营业时间 </th>
+<th class="tableblock halign-left valign-top" >地址                  </th>
+<th class="tableblock halign-left valign-top" >公交                           </th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">18:00-?</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">中山路美食街北侧入口处</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">71、80、89、212、802路 市一医院站</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+<div class="paragraph"><p>路边摊。</p></div>
+</div>
+<div class="sect2">
+<h3 id="_包记中山路老牌酸嘢">包记中山路老牌酸嘢</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >营业时间   </th>
+<th class="tableblock halign-left valign-top" >地址                  </th>
+<th class="tableblock halign-left valign-top" >公交                            </th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">18:00-24:00</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">中山路美食街南侧入口处</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">71、80、89、212、802路 市一医院站</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+<div class="paragraph"><p>开了很多年的酸嘢摊。只有晚上6点以后才会摆摊出来。
+推荐芒果酸嘢。</p></div>
 </div>
 <div class="sect2">
 <h3 id="_邕江防洪古堤">邕江防洪古堤</h3>
@@ -1130,6 +1265,37 @@ width:100%;
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_邕江大桥">邕江大桥</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >开放时间  </th>
+<th class="tableblock halign-left valign-top" >地址  </th>
+<th class="tableblock halign-left valign-top" >公交</th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">0:00-24:00</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">青秀区</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+<div class="paragraph"><p>可以来看夜景。</p></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1164,6 +1330,10 @@ width:100%;
 <tbody>
 </tbody>
 </table>
+<div class="paragraph"><p>明清时期曾是南宁府署。
+辛亥革命后广西高等审判厅在此办公。
+1927年改为广西高等法院。
+1950年南宁市政府在此办公。</p></div>
 </div>
 <div class="sect2">
 <h3 id="_邓颖超纪念馆">邓颖超纪念馆</h3>
@@ -1194,8 +1364,8 @@ width:100%;
 <tbody>
 </tbody>
 </table>
-<div class="paragraph"><p>免票入场。法定节假日超常开放。
-需要身份证等有效证件才能入场。</p></div>
+<div class="paragraph"><p>免票入场。法定节假日超常开放。需要身份证等有效证件才能入场。</p></div>
+<div class="paragraph"><p>现在你知道了，邓颖超也是南宁人。LOL</p></div>
 </div>
 <div class="sect2">
 <h3 id="_金狮巷民居群">金狮巷民居群</h3>
@@ -1256,6 +1426,8 @@ width:100%;
 <tbody>
 </tbody>
 </table>
+<div class="paragraph"><p>北宋年间，在邕城的知州苏缄为了抵抗越南军的入侵，坚守邕城。
+最后城破，苏缄带领全家几十口人引火自焚，以身殉国。</p></div>
 <div class="imageblock" style="text-align:right;">
 <div class="content">
 <a class="image" href="images/yongzhouzhizhou.jpg">
@@ -1264,36 +1436,6 @@ width:100%;
 </div>
 <div class="title">Figure 2. 邕州知州苏缄殉难遗址</div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_共一老友面店">共一老友面店</h3>
-<table class="tableblock frame-all grid-all"
-style="
-width:100%;
-">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" >营业时间</th>
-<th class="tableblock halign-left valign-top" >地址       </th>
-<th class="tableblock halign-left valign-top" >公交  </th>
-<th class="tableblock halign-left valign-top" >地铁</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">共和路207号</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
-</tr>
-</tfoot>
-<tbody>
-</tbody>
-</table>
 </div>
 <div class="sect2">
 <h3 id="_共青团南宁地委旧址">共青团南宁地委旧址</h3>
@@ -1338,7 +1480,7 @@ width:100%;
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top" >营业时间</th>
-<th class="tableblock halign-left valign-top" >地址 </th>
+<th class="tableblock halign-left valign-top" >地址            </th>
 <th class="tableblock halign-left valign-top" >公交  </th>
 <th class="tableblock halign-left valign-top" >地铁</th>
 </tr>
@@ -1346,9 +1488,9 @@ width:100%;
 <tfoot>
 <tr>
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">兴宁区民生路38号</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
 </tr>
 </tfoot>
 <tbody>
@@ -1385,7 +1527,17 @@ width:100%;
 <tbody>
 </tbody>
 </table>
-<div class="paragraph"><p>曾经是南宁市最高建筑。</p></div>
+<div class="paragraph"><p>曾经是南宁市最高建筑。
+使用德产钢材制造。</p></div>
+<div class="paragraph"><p>日军占领南宁时，曾在塔顶插上日章旗。</p></div>
+<div class="imageblock" style="text-align:right;">
+<div class="content">
+<a class="image" href="images/xinhualushuita.jpg">
+<img src="images/xinhualushuita.jpg" alt="新华路水塔" width="180">
+</a>
+</div>
+<div class="title">Figure 3. 新华路水塔</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_西关路铁桥">西关路铁桥</h3>
@@ -1416,12 +1568,53 @@ width:100%;
 <tbody>
 </tbody>
 </table>
+<div class="paragraph"><p>在民国时期，西关路一带曾为妓院所在。为了交通方便，于是造了这座桥。</p></div>
+<div class="paragraph"><p>由德国人设计，广东谦德公司承建。
+南北走向的三拱人行拱桥。钢架结构，钢筋混凝土桥面，混凝土台墩。时为南宁具有代表性的建筑。现仍在使用。</p></div>
+<div class="imageblock" style="text-align:right;">
+<div class="content">
+<a class="image" href="images/xiguanlutieqiao.jpg">
+<img src="images/xiguanlutieqiao.jpg" alt="西关路铁桥" width="180">
+</a>
+</div>
+<div class="title">Figure 4. 西关路铁桥</div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_水街区域">水街区域</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_越美粽店">越美粽店</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >营业时间</th>
+<th class="tableblock halign-left valign-top" >地址 </th>
+<th class="tableblock halign-left valign-top" >公交</th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+</div>
 <div class="sect2">
 <h3 id="_两湖会馆">两湖会馆</h3>
 <table class="tableblock frame-all grid-all"
@@ -1435,7 +1628,7 @@ width:100%;
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top" >开放时间</th>
-<th class="tableblock halign-left valign-top" >地址            </th>
+<th class="tableblock halign-left valign-top" >地址               </th>
 <th class="tableblock halign-left valign-top" >公交</th>
 <th class="tableblock halign-left valign-top" >地铁</th>
 </tr>
@@ -1504,37 +1697,7 @@ width:100%;
 <tr>
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">兴宁区解放路42号</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
-</tr>
-</tfoot>
-<tbody>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_粤东会馆">粤东会馆</h3>
-<table class="tableblock frame-all grid-all"
-style="
-width:100%;
-">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" >开放时间</th>
-<th class="tableblock halign-left valign-top" >地址             </th>
-<th class="tableblock halign-left valign-top" >公交</th>
-<th class="tableblock halign-left valign-top" >地铁</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">西乡塘区壮志路22号</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">45路</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
 </tr>
 </tfoot>
@@ -1636,43 +1799,13 @@ width:100%;
 <tbody>
 </tbody>
 </table>
-<div class="paragraph"><p>据说是挺人气的老友粉店。
+<div class="paragraph"><p>挺人气的老友粉店。
 推荐老友猪肉粉/面（12元）、老友猪肉伊面（13元）。</p></div>
-<div class="paragraph"><p>关于老友粉有个传说，这个传说有几个版本，其中比较常见的是：
-很久很久以前，有个老哥感冒了，他的朋友是个开粉店的老板，老板于是很拼的用各种调味料做出了一碗酸辣味的粉。
-这个老哥吃了老板的粉以后，感冒一下子全好了。于是这粉就出名了blabla。</p></div>
-<div class="paragraph"><p>据说最初的老友粉只有粉的版本，没有面。
+<div class="paragraph"><p>关于老友粉有个传说，这个传说有几个版本，其中一个是：</p></div>
+<div class="paragraph"><p>很久以前，有个老哥感冒了，他的朋友是个开粉店的老板，老板于是很拼的用各种调味料做出了一碗酸辣味的粉。
+这个老哥吃了老板的粉以后，感冒一下子全好了，于是这粉就出名了blabla。</p></div>
+<div class="paragraph"><p>据说最初老友粉/面只有粉的版本，没有老友面。老友面是后来才有的。
 最初的老友粉是没有青菜的。</p></div>
-</div>
-<div class="sect2">
-<h3 id="_林氏民居">林氏民居</h3>
-<table class="tableblock frame-all grid-all"
-style="
-width:100%;
-">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" >开放时间  </th>
-<th class="tableblock halign-left valign-top" >地址            </th>
-<th class="tableblock halign-left valign-top" >公交  </th>
-<th class="tableblock halign-left valign-top" >地铁</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">青秀区七星路97号</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
-</tr>
-</tfoot>
-<tbody>
-</tbody>
-</table>
 </div>
 <div class="sect2">
 <h3 id="_连升风味小吃">连升风味小吃</h3>
@@ -1704,15 +1837,86 @@ width:100%;
 </tbody>
 </table>
 <div class="paragraph"><p>传统小吃的老店。有凉茶、甜品、粉面、饺子等。
-推荐招牌菜荷叶香菇腊味饭（4.5元）和双皮奶（7元）。</p></div>
+推荐招牌菜荷叶香菇腊味饭（4.5元）和双皮奶（7元）。
+这里的干捞粉也不错。推荐卤肉干捞粉。</p></div>
+<div class="imageblock" style="text-align:right;">
+<div class="content">
+<a class="image" href="images/heyexianggulaweifan.jpg">
+<img src="images/heyexianggulaweifan.jpg" alt="荷叶香菇腊味饭" width="180">
+</a>
+</div>
+<div class="title">Figure 5. 荷叶香菇腊味饭</div>
+</div>
 <div class="imageblock" style="text-align:right;">
 <div class="content">
 <a class="image" href="images/shuangpinai.jpg">
 <img src="images/shuangpinai.jpg" alt="双皮奶" width="180">
 </a>
 </div>
-<div class="title">Figure 3. 双皮奶</div>
+<div class="title">Figure 6. 双皮奶</div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_广西壮族自治区博物馆">广西壮族自治区博物馆</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >开放时间  </th>
+<th class="tableblock halign-left valign-top" >地址        </th>
+<th class="tableblock halign-left valign-top" >公交  </th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">闭馆施工中</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">民族大道34号</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+<div class="paragraph"><p>可参观镇馆之宝羽纹铜凤灯、扶桑树形铜灯、羽人划船纹栉纹铜鼓。
+可惜现在闭馆。你懂的。</p></div>
+</div>
+<div class="sect2">
+<h3 id="_桂南战役阵亡将士纪念亭">桂南战役阵亡将士纪念亭</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >开放时间</th>
+<th class="tableblock halign-left valign-top" >地址                     </th>
+<th class="tableblock halign-left valign-top" >公交  </th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">???</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">青秀区植物路区第一幼儿院内</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 新民路站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_广西省体育场门楼">广西省体育场门楼</h3>
@@ -1750,6 +1954,37 @@ width:100%;
 <h2 id="_人民公园区域">人民公园区域</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_人民公园">人民公园</h3>
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" >开放时间</th>
+<th class="tableblock halign-left valign-top" >地址           </th>
+<th class="tableblock halign-left valign-top" >公交       </th>
+<th class="tableblock halign-left valign-top" >地铁</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">兴宁区新民路1号</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">19、30、78路</p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
+</tr>
+</tfoot>
+<tbody>
+</tbody>
+</table>
+<div class="paragraph"><p>原为白龙公园。有白龙的传说。</p></div>
+</div>
+<div class="sect2">
 <h3 id="_镇宁炮台">镇宁炮台</h3>
 <table class="tableblock frame-all grid-all"
 style="
@@ -1772,48 +2007,14 @@ width:100%;
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">兴宁区公园路人民公园望仙坡西南</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1、2号线 朝阳广场站</p></td>
 </tr>
 </tfoot>
 <tbody>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_其他">其他</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_老字号高叶面阁总店">老字号高叶面阁总店</h3>
-<table class="tableblock frame-all grid-all"
-style="
-width:100%;
-">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<col style="width:25%;">
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" >营业时间</th>
-<th class="tableblock halign-left valign-top" >地址 </th>
-<th class="tableblock halign-left valign-top" >公交  </th>
-<th class="tableblock halign-left valign-top" >地铁</th>
-</tr>
-</thead>
-<tfoot>
-<tr>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock">龙腾路正培台湾商业街商铺1022</p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-</tr>
-</tfoot>
-<tbody>
-</tbody>
-</table>
-<div class="paragraph"><p>推荐老友粉、老友面。</p></div>
+<div class="paragraph"><p>19世纪德国克虏伯工厂制造。
+炮台只能270度旋转。</p></div>
 </div>
 <div class="sect2">
 <h3 id="_老牌黄记八宝粥">老牌黄记八宝粥</h3>
@@ -1838,12 +2039,13 @@ width:100%;
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock">建政路27-1号</p></td>
 <td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
-<td class="tableblock halign-left valign-top" ><p class="tableblock"></p></td>
+<td class="tableblock halign-left valign-top" ><p class="tableblock">1号线 民族广场站</p></td>
 </tr>
 </tfoot>
 <tbody>
 </tbody>
 </table>
+<div class="paragraph"><p>推荐八宝粥、绿豆沙和黑凉粉。</p></div>
 </div>
 </div>
 </div>
@@ -1853,7 +2055,8 @@ width:100%;
 <div class="paragraph"><p>本书的名字是《徒步游南宁》。
 主要是介绍南宁的一些旅游景点和风味小吃。</p></div>
 <div class="paragraph"><p>您可以在<a href="http://nanninglvyou.net">这里</a>读这本书。</p></div>
-<div class="paragraph"><p>意见和建议请发送电子邮件至 <a href="mailto:muirmok@gmail.com">这里</a>。</p></div>
+<div class="paragraph"><p>批评和建议请发送电子邮件至 <a href="mailto:muirmok@gmail.com">这里</a>。
+欢迎您的批评。</p></div>
 </div>
 </div>
 </div>
@@ -1862,7 +2065,7 @@ width:100%;
 <div id="footer-text">
 Version 0.1<br>
 Last updated
- 2019-08-09 21:27:18 CST
+ 2019-08-10 18:37:46 CST
 </div>
 </div>
 </body>
