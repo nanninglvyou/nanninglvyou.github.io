@@ -1,8 +1,8 @@
 ADOC=~/bin/asciidoc
-AFLAGS=-b html5 -a toc2
+AFLAGS=-b html5 -a toc2 -a theme=flask
 
 all:
-	$(ADOC) $(AFLAGS) -o index.html -a theme=flask index.asc
+	$(ADOC) $(AFLAGS) -o index.html index.asc
 
 clean:
 	rm *.html
