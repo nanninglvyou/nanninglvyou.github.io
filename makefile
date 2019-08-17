@@ -1,5 +1,5 @@
 ADOC=~/bin/asciidoc
-AFLAGS=-b html5 -a toc2 -a theme=flask -a linkcss -a stylesheet=styles.css -a stylesdir=./stylesheets
+AFLAGS=-a linkcss -a stylesheet=styles.css -a stylesdir=./stylesheets -b html5 -a toc2 -a theme=flask
 
 all:
 	$(ADOC) $(AFLAGS) -o index.html index.asc
