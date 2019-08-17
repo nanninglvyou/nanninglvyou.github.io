@@ -1,5 +1,5 @@
 ADOC=~/bin/asciidoc
-AFLAGS=-b html5 -a toc2 -a theme=flask
+AFLAGS=-b html5 -a toc2 -a theme=flask -a linkcss -a stylesheet=styles.css -a stylesdir=./stylesheets
 
 all:
 	$(ADOC) $(AFLAGS) -o index.html index.asc
@@ -14,4 +14,4 @@ gitpush:
 	git push -u origin master
 
 clean:
-	rm index.html nanninglvyou.rar
+	rm *.html nanninglvyou.rar
