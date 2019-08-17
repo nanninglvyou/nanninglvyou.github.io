@@ -7,5 +7,11 @@ all:
 rar:
 	rar a -rr nanninglvyou.rar *.asc makefile
 
+gitadd:
+	git add images/*.jpg thumbs/*.jpg *.asc *.html makefile
+
+gitpush:
+	git push -u origin master
+
 clean:
 	rm index.html nanninglvyou.rar
