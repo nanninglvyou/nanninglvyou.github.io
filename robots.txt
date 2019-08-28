@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
+User-agent: ia_archiver
+Disallow:
+
 Sitemap:
 http://nanninglvyou.net/sitemap.xml
