@@ -1,17 +1,13 @@
-ADOC=~/bin/asciidoc
-AFLAGS=-a linkcss -a stylesheet=styles.css -a stylesdir=./stylesheets -b html5 -a toc2 -a theme=flask
+ADOC= ~/bin/asciidoc
+AFLAGS= -a icons -a toc2 --theme=flask -a xhtml11 \
+	-a max-width=55em
 
 all:
-	$(ADOC) $(AFLAGS) -o index.html index.asc
-
-lzh:
-	lha c nanninglvyou.lzh images thumbs stylesheets *.asc makefile asciidoc.js
+	$(ADOC) $(AFLAGS) index.asc
+	tidy -m -language zh_cn -utf8 index.html
 
 gitadd:
 	git add images/*.jpg thumbs/*.jpg *.asc *.html makefile
 
 gitpush:
 	git push -u origin master
-
-clean:
-	rm *.html nanninglvyou.lzh
