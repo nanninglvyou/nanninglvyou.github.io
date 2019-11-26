@@ -1,6 +1,5 @@
 ADOC= ~/bin/asciidoc
-AFLAGS= -a icons -a toc2 --theme=flask -a xhtml11 \
-	-a max-width=55em
+AFLAGS= -a xhtml11 -a toc2 -a max-width=55em
 
 all:
 	$(ADOC) $(AFLAGS) index.asc
