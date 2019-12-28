@@ -13,4 +13,6 @@ include::ch04-qixing.asc[]
 
 include::ch05-renmingongyuan.asc[]
 
+include::ch06-qita.asc[]
+
 include::README.asc[]

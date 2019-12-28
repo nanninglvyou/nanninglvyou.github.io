@@ -5,20 +5,20 @@
 [options="header,footer"]
 |==============================================================================
 |营业时间  |地址                     |公交                    |地铁
-|7:00-24:00|https://foursquare.com/v/%E8%80%81%E7%89%8C%E9%BB%84%E8%AE%B0%E5%85%AB%E5%AE%9D%E7%B2%A5/505c2335e4b0b4bf44530c7d[青秀区建政路27-1号14中铺面]|http://0771.mygolbs.com:9292/nnh5/[1路、B37路 建政园湖路口站]|http://www.nngdjt.com/html/service1c/[1号线 民族广场站]
+|7:00-24:00|https://foursquare.com/v/%E8%80%81%E7%89%8C%E9%BB%84%E8%AE%B0%E5%85%AB%E5%AE%9D%E7%B2%A5/505c2335e4b0b4bf44530c7d[青秀区建政路27-1号14中铺面]|1路、B37路 建政园湖路口站|http://www.nngdjt.com/html/service1c/[1号线 民族广场站]
 |==============================================================================
 
 推荐 https://zh.wikipedia.org/zh-cn/%E5%85%AB%E5%AF%B6%E7%B2%A5[黑米八宝粥]（4.5元）、绿豆沙（4元）、 https://zh.wikipedia.org/zh-cn/%E9%BB%91%E8%8A%9D%E9%BA%BB%E7%B3%8A[黑芝麻糊]（4.5元）等。口感偏甜。和其他家不同，这家绿豆沙和八宝粥有一股淡淡的陈皮的香味。
 
 .黑米八宝粥
-image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,align="right",link="images/heimibabaozhou.jpg"]
+image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,link="images/heimibabaozhou.jpg"]
 
 === 人民公园
 
 [options="header,footer"]
 |====================================================================
 |开放时间  |地址           |公交                  |地铁
-|0:00-24:00|https://foursquare.com/v/%E4%BA%BA%E6%B0%91%E5%85%AC%E5%9B%AD/4baf4d62f964a52093f63be3[兴宁区新民路1号]|http://0771.mygolbs.com:9292/nnh5/[31、41、78、80、81、B73、B91、B206路 人民公园站]|http://www.nngdjt.com/html/service1c/[1、2号线 朝阳广场站]
+|0:00-24:00|https://foursquare.com/v/%E4%BA%BA%E6%B0%91%E5%85%AC%E5%9B%AD/4baf4d62f964a52093f63be3[兴宁区新民路1号]|31、41、78、80、81、B73、B91、B206路 人民公园站|http://www.nngdjt.com/html/service1c/[1、2号线 朝阳广场站]
 |====================================================================
 
 入园免费。
@@ -31,7 +31,7 @@ image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,align="right",link
 [options="header,footer"]
 |=================================================================================================================================================================
 |开放时间                                           |电话                     |地址                         |公交                             |地铁
-|周二至周日 8:00-17:30（冬令时） 8:00-18:00（夏令时）|0771-5644955、0771-2862171|https://foursquare.com/v/%E9%95%87%E5%AE%81%E7%82%AE%E5%8F%B0/5d5502fa017990000762e61e[兴宁区公园路人民公园望仙坡西南]|http://0771.mygolbs.com:9292/nnh5/[31、41、78、80、81、B73、B91、B206路 人民公园站]|http://www.nngdjt.com/html/service1c/[1号线、2号线 朝阳广场站]
+|周二至周日 8:00-17:30（冬令时） 8:00-18:00（夏令时）|0771-5644955、0771-2862171|https://foursquare.com/v/%E9%95%87%E5%AE%81%E7%82%AE%E5%8F%B0/5d5502fa017990000762e61e[兴宁区公园路人民公园望仙坡西南]|31、41、78、80、81、B73、B91、B206路 人民公园站|http://www.nngdjt.com/html/service1c/[1号线、2号线 朝阳广场站]
 |=================================================================================================================================================================
 
 参观免费。
@@ -42,5 +42,5 @@ image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,align="right",link
 炮台所在山坡为南宁自然制高点。
 
 .镇宁炮台
-image::thumbs/zhenningpaotai.jpg["镇宁炮台", width=256,align="right",link="images/zhenningpaotai.jpg"]
+image::thumbs/zhenningpaotai.jpg["镇宁炮台", width=256,link="images/zhenningpaotai.jpg"]
 
