@@ -3,16 +3,16 @@ Muir Mok <muirmok@gmail.com>
 
 本书主要介绍了南宁的一些传统小吃店和观光旅游景点。
 
-include::ch01-zhongshanlu.asc[]
+include::ch01-zhongshanlu.adoc[]
 
-include::ch02-chaoyang.asc[]
+include::ch02-chaoyang.adoc[]
 
-include::ch03-shuijie.asc[]
+include::ch03-shuijie.adoc[]
 
-include::ch04-qixing.asc[]
+include::ch04-qixing.adoc[]
 
-include::ch05-renmingongyuan.asc[]
+include::ch05-renmingongyuan.adoc[]
 
-include::ch06-qita.asc[]
+include::ch06-qita.adoc[]
 
-include::README.asc[]
+include::README.adoc[]
