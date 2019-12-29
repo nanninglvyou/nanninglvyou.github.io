@@ -1,7 +1,7 @@
 ﻿== 关于本书
 
 本书的名字是《南宁旅游攻略》。
-您可以在 http://nanninglvyou.net[这里]读这本书。
+您可以在https://github.com/nanninglvyou/nanninglvyou.github.io/archive/master.zip[这里]下载整个网站文件。
 批评和建议请发送电子邮件至 mailto:muirmok@gmail.com[这里]。
 欢迎您的批评。
 

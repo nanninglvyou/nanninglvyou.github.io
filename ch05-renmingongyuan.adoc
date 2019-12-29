@@ -21,7 +21,7 @@ image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,link="images/heimi
 |全天开放 |https://foursquare.com/v/%E4%BA%BA%E6%B0%91%E5%85%AC%E5%9B%AD/4baf4d62f964a52093f63be3[兴宁区新民路1号]|31、41、78、80、81、B73、B91、B206路 人民公园站|http://www.nngdjt.com/html/service1c/[1、2号线 朝阳广场站]
 |====================================================================
 
-入园免费。
+入园免费。园内有镇宁炮台、白龙塘。
 始建于1951年。原名白龙公园。园内有自然景观白龙塘。有白龙的传说。
 宋代名将狄青曾在望仙坡驻扎，某日见塘边有一条白龙游动，仔细一看原来是一群白羊。故得名白龙塘。
 
@@ -35,7 +35,7 @@ image::thumbs/heimibabaozhou.jpg["黑米八宝粥", width=256,link="images/heimi
 
 参观免费。
 19世纪德国 https://zh.wikipedia.org/zh-cn/%E5%85%8B%E8%99%8F%E4%BC%AF[克虏伯]工厂制造的加农炮。
-由 https://zh.wikipedia.org/zh-cn/%E9%99%B8%E6%A6%AE%E5%BB%B7[陆荣廷]从龙州县运来。由于陆荣廷是 https://zh.wikipedia.org/zh-cn/%E5%AE%BE%E9%98%B3%E5%8E%BF[宾阳]人，不愿意看到北面的宾阳被炮轰，于是命令更改炮台设计，
+由https://zh.wikipedia.org/zh-cn/%E9%99%B8%E6%A6%AE%E5%BB%B7[陆荣廷]从龙州县运来。由于陆荣廷是宾阳人，不愿意看到北面的宾阳被炮轰，于是命令更改炮台设计，
 令炮台只能沿铁轨180度旋转，只能向东南西三个方向射击。
 自建成以来，未发一炮。
 炮台所在山坡为南宁自然制高点。

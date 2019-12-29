@@ -5,7 +5,7 @@ all:
 	$(ADOC) $(AFLAGS) index.adoc
 
 gitadd:
-	git add images/*.jpg thumbs/*.jpg *.adoc *.html makefile
+	git add images/*.jpg thumbs/*.jpg *.adoc index.html makefile
 
 gitpush:
 	git push -u origin master
