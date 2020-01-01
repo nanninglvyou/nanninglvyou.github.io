@@ -9,3 +9,6 @@ gitadd:
 
 gitpush:
 	git push -u origin master
+
+archive:
+	git archive --format zip --output ../nanninglvyou.zip --prefix=nanninglvyou/ master

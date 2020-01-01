@@ -12,6 +12,9 @@
 
 推荐猪肉绿豆板栗粽（6元/只）、猪肉绿豆粽（5元/只）。
 
+.猪肉绿豆粽
+image::thumbs/zhurouzong.jpg["猪肉绿豆粽", width=256,link="images/zhurouzong.jpg"]
+
 === 黄阿婆粉虫店
 
 [options="header,footer"]
@@ -50,7 +53,7 @@ image::thumbs/niunanfen.jpg["牛腩粉", width=256,link="images/niunanfen.jpg"]
 
 据说是由光绪民国初期传承至今的老店。
 
-推荐香菇马蹄虾味猪肉饺（11元）、老友猪肉炒粉虫（11元）。
+推荐香菇马蹄虾味猪肉饺（11元）、老友猪肉炒粉虫（11元）、芋头糕（5元）。
 老友猪肉炒粉虫默认会比较辣，如果不能吃辣，点菜的时候跟店员说一句“不要辣”。
 
 .老友猪肉炒粉虫
