@@ -1,5 +1,9 @@
 = 南宁旅游攻略
 Muir Mok <muirmok@gmail.com>
+:author: Muir Mok
+:toc:
+:toc-title: 目录
+:encoding: utf-8
 
 本书主要介绍了南宁的一些传统小吃店和观光旅游景点。
 
