@@ -1,9 +1,8 @@
 ﻿== 关于本书
 
 本书的名字是《南宁旅游攻略》。
-您可以在https://github.com/nanninglvyou/nanninglvyou.github.io/archive/master.zip[这里]下载网站文件的打包。
-批评和建议请发送电子邮件至 mailto:muirmok@gmail.com[这里]。
-欢迎您的批评。
 
 笔者在日本横滨市居住4年，阅读了当地的旅游书籍，发现其内容极为翔实，
 深感没有一本能够介绍南宁小吃和旅游景点的书，于是写了这本书。
+
+批评和建议请发送电子邮件至 mailto:muirmok@gmail.com[这里]。
