@@ -2,14 +2,14 @@
 
 === 舒记粉店
 
-[options="header,footer"]
+[options="header"]
 |========================================================================================
 |营业时间  |地址           |公交                                          |地铁
-|0:00-24:00|https://foursquare.com/v/%E8%88%92%E8%AE%B0%E7%B2%89%E5%BA%97/4f2d1601e4b03caf526806d4[青秀区七星路42号]|71、80、89、212、802路 市一医院站|http://www.nngdjt.com/html/service1c/[1号线 新民路站]
+|0:00-24:00|https://foursquare.com/v/%E8%88%92%E8%AE%B0%E7%B2%89%E5%BA%97/4f2d1601e4b03caf526806d4[青秀区七星路42号]|71、80、89、212、802路 市一医院站|1号线 新民路站
 |========================================================================================
 
-卖https://zh.wikipedia.org/zh-cn/%E8%80%81%E5%8F%8B%E7%B2%89[老友粉]的老店。
-推荐老友猪肉粉（12元）、老友猪肉面（12元）、老友猪肉伊面（13元）。
+卖 https://zh.wikipedia.org/zh-cn/%E8%80%81%E5%8F%8B%E7%B2%89[老友粉]的老店。
+推荐老友猪肉粉（12元）、老友猪肉面（12元）、<<老友猪肉伊面>>（13元）。
 
 买粉顺序：先到中山路口那一侧的店铺收银台付款买粉，拿到小票，然后到任何一处（共有三处可取粉的窗口、总共有两个门面）的取粉窗口，将小票插到下面有数字的铁针上（注意数字先来后到），等待取粉。
 
@@ -23,43 +23,43 @@
 据说最初老友粉、面只有粉的版本，没有老友面。老友面是后来才有的。
 最初的老友粉是没有青菜的。
 
-.老友猪肉伊面
-image::thumbs/laoyouyimian.jpg["老友猪肉伊面", width=256,link="images/laoyouyimian.jpg"]
+.[[老友猪肉伊面]]老友猪肉伊面
+image::laoyouyimian.jpg["老友猪肉伊面", width=256,link="images/laoyouyimian.jpg"]
 
 === 连升风味小吃
 
-[options="header,footer"]
+[options="header"]
 |===========================================================================================
 |营业时间  |地址            |公交                                             |地铁
-|8:00-22:30|https://foursquare.com/v/%E8%BF%9E%E5%8D%87%E9%A3%8E%E5%91%B3%E5%B0%8F%E5%90%83/5062d881e4b0b7a3c49d5c9c[新民路6号停车场内]|32、B3、B73、26、41、62、609、B27路 新民七星路口站|http://www.nngdjt.com/html/service1c/[1号线 新民路站]
+|8:00-22:30|https://foursquare.com/v/%E8%BF%9E%E5%8D%87%E9%A3%8E%E5%91%B3%E5%B0%8F%E5%90%83/5062d881e4b0b7a3c49d5c9c[新民路6号停车场内]|32、B3、B73、26、41、62、609、B27路 新民七星路口站|1号线 新民路站
 |===========================================================================================
 
 传统小吃的老店。有凉茶、甜品、粉面、饺子等。
-推荐招牌菜https://zh.wikipedia.org/zh-cn/%E8%8D%B7%E8%91%89%E9%A3%AF[荷叶香菇腊味饭]（4.5元）和https://zh.wikipedia.org/zh-cn/%E5%8F%8C%E7%9A%AE%E5%A5%B6[双皮奶]（7元）。
-这里的干捞粉也不错。推荐卤肉干捞粉。酸酸甜甜配合米粉的口感，真香。
+推荐招牌菜<<荷叶香菇腊味饭>>（4.5元）和<<双皮奶>>（7元）。
+这里的干捞粉也不错。推荐酸甜味的卤肉干捞粉。
 
-.荷叶香菇腊味饭
-image::thumbs/heyexianggulaweifan.jpg["荷叶香菇腊味饭", width=256,link="images/heyexianggulaweifan.jpg"]
+.[[荷叶香菇腊味饭]]荷叶香菇腊味饭
+image::heyexianggulaweifan.jpg["荷叶香菇腊味饭", width=256,link="images/heyexianggulaweifan.jpg"]
 
-.双皮奶
-image::thumbs/shuangpinai.jpg["双皮奶", width=256,link="images/shuangpinai.jpg"]
+.[[双皮奶]]双皮奶
+image::shuangpinai.jpg["双皮奶", width=256,link="images/shuangpinai.jpg"]
 
 === 广西壮族自治区博物馆
 
-[options="header,footer"]
+[options="header"]
 |========================================================================================
 |开放时间  |地址        |公交                                            |地铁
-|闭馆施工中|https://foursquare.com/v/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8D%9A%E7%89%A9%E9%A6%86--gvangjsih-bouxcuengh-swcigih-bozvuzgvanj/4be04e154f15c928f9adca0b[民族大道34号]|6、34、39、79、205、604、704、706路 民族古城路口站|http://www.nngdjt.com/html/service1c/[1号线 民族广场站]
+|闭馆施工中|https://foursquare.com/v/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%8D%9A%E7%89%A9%E9%A6%86--gvangjsih-bouxcuengh-swcigih-bozvuzgvanj/4be04e154f15c928f9adca0b[民族大道34号]|6、34、39、79、205、604、704、706路 民族古城路口站|1号线 民族广场站
 |========================================================================================
 
-可参观镇馆之宝http://www.gxmuseum.cn/a/antique/16/2012/1586.html[羽纹铜凤灯]和http://www.gxmuseum.cn/a/antique/16/2012/1589.html[翔鹭纹铜鼓]等。
+可参观镇馆之宝 http://www.gxmuseum.cn/a/antique/16/2012/1586.html[羽纹铜凤灯]和 http://www.gxmuseum.cn/a/antique/16/2012/1589.html[翔鹭纹铜鼓]等。
 
 === 南湖公园
 
-[options="header,footer"]
+[options="header"]
 |========================================================================================
 |开放时间  |电话         |地址        |公交                                            |地铁
-|全天开放  |0771-5333610、0771-5324932 |https://foursquare.com/v/%E5%8D%97%E6%B9%96%E5%85%AC%E5%9B%AD/4ea51a46a17c50a15d0662a5[青秀区双拥路3号]|8、20、33、34、51、60、80、117、215、B3、B11、B14、B86路 南湖公园站|http://www.nngdjt.com/html/service1c/[1号线 南湖站]
+|全天开放  |0771-5333610、0771-5324932 |https://foursquare.com/v/%E5%8D%97%E6%B9%96%E5%85%AC%E5%9B%AD/4ea51a46a17c50a15d0662a5[青秀区双拥路3号]|8、20、33、34、51、60、80、117、215、B3、B11、B14、B86路 南湖公园站|1号线 南湖站
 |========================================================================================
 
 南宁市区东南部的公园，可欣赏到美丽的湖景和沿湖的绿树、花木。
@@ -68,4 +68,4 @@ image::thumbs/shuangpinai.jpg["双皮奶", width=256,link="images/shuangpinai.jp
 沿着湖边的环湖路可以跑步。
 
 .南湖公园的湖景
-image::thumbs/nanhugongyuan.jpg["南湖公园的湖景", width=256,link="images/nanhugongyuan.jpg"]
+image::nanhugongyuan.jpg["南湖公园的湖景", width=256,link="images/nanhugongyuan.jpg"]
