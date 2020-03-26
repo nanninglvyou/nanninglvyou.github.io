@@ -1,6 +1,6 @@
 = 南宁旅游攻略
-Muir Mok <muirmok@gmail.com>
-:author: Muir Mok
+Mike Akiba <mike2718@gmail.com>
+:author: Mike Akiba
 :toc:
 :imagesdir: thumbs
 :encoding: utf-8
